@@ -1,4 +1,4 @@
-﻿package something;
+package something;
 
 import java.util.Random;
 import java.util.concurrent.ExecutorService;

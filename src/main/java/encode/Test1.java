@@ -1,4 +1,4 @@
-﻿package encode;
+package encode;
 
 import java.io.UnsupportedEncodingException;
 
@@ -10,19 +10,19 @@ import java.io.UnsupportedEncodingException;
 public class Test1 {
 
 	public static void main(String[] args) throws UnsupportedEncodingException {
-		/*String str = "鍛靛懙鍝?;
+		/*String str = "锻靛懙鍝?;
 		byte[] b = str.getBytes("UTF-8");
 		System.out.println(new String(b, "UTF-8"));
 		
 		Charset charset = Charset.forName("UTF-8");
-		ByteBuffer bb = charset.encode("鍛靛懙鍝?);
+		ByteBuffer bb = charset.encode("锻靛懙鍝?);
 		CharBuffer cb = charset.decode(bb);
 		System.out.println(cb.toString());*/
 		
-		//char[] array = "鍛靛懙鍝?.toCharArray();
+		//char[] array = "锻靛懙鍝?.toCharArray();
 		//System.out.println(toHex('I'));
 		
-		System.out.println(toHex("I am 鍝堝搱"));
+		System.out.println(toHex("I am 鍝埚搱"));
 	}
 	
 	/**

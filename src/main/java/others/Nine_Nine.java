@@ -1,4 +1,4 @@
-﻿package others;
+package others;
 
 /**
  * 99乘法表

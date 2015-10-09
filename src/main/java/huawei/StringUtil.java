@@ -1,4 +1,4 @@
-﻿package huawei;
+package huawei;
 
 public class StringUtil {
 

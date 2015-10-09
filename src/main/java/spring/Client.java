@@ -1,4 +1,4 @@
-﻿package spring;
+package spring;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

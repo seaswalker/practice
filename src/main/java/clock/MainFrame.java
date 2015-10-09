@@ -1,4 +1,4 @@
-﻿package clock;
+package clock;
 
 import java.awt.EventQueue;
 import java.awt.Point;

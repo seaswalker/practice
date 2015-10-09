@@ -1,4 +1,4 @@
-﻿package something;
+package something;
 
 import java.util.Arrays;
 

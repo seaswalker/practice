@@ -1,4 +1,4 @@
-﻿package effectivejava;
+package effectivejava;
 
 import java.util.ArrayList;
 import java.util.HashSet;

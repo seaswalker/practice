@@ -1,4 +1,4 @@
-﻿package introspector;
+package introspector;
 
 public class Entity {
 

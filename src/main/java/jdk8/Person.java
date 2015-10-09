@@ -1,4 +1,4 @@
-﻿package jdk8;
+package jdk8;
 
 /**
  * 员工辅助类

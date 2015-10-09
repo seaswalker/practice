@@ -1,4 +1,4 @@
-﻿package offer;
+package offer;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-﻿package net;
+package net;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

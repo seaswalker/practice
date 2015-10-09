@@ -1,4 +1,4 @@
-﻿package something;
+package something;
 
 public enum EnumTest {
 

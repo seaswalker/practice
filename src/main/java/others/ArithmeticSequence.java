@@ -1,4 +1,4 @@
-﻿package others;
+package others;
 
 /**
  * 等差数列求和

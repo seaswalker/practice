@@ -1,4 +1,4 @@
-﻿package net;
+package net;
 
 import java.awt.Color;
 import java.io.IOException;

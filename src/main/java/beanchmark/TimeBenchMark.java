@@ -1,4 +1,4 @@
-﻿package beanchmark;
+package beanchmark;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationTargetException;

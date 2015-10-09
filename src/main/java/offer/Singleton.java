@@ -1,4 +1,4 @@
-﻿package offer;
+package offer;
 
 /**
  * 再看单例模式

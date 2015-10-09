@@ -1,4 +1,4 @@
-﻿package qrcode;
+package qrcode;
 
 import java.awt.image.BufferedImage;
 import java.io.File;

@@ -1,4 +1,4 @@
-﻿package others;
+package others;
 
 public class DontKown {
 

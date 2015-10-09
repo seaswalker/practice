@@ -1,4 +1,4 @@
-﻿package jdk8;
+package jdk8;
 
 import java.util.ArrayList;
 import java.util.Arrays;

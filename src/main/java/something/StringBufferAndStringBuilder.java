@@ -1,4 +1,4 @@
-﻿package something;
+package something;
 
 import beanchmark.BenchMark;
 import beanchmark.TimeBenchMark;

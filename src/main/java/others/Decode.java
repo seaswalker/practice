@@ -1,4 +1,4 @@
-﻿package others;
+package others;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;

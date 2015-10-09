@@ -1,4 +1,4 @@
-﻿package count;
+package count;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

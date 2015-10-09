@@ -1,4 +1,4 @@
-﻿package others.threadlocal;
+package others.threadlocal;
 
 public class Counter {
 

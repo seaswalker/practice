@@ -1,4 +1,4 @@
-﻿package others;
+package others;
 
 /**
  *  小球掉落

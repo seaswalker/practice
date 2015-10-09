@@ -1,4 +1,4 @@
-﻿package others;
+package others;
 
 /**
  * 方法覆盖

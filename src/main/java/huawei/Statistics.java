@@ -1,4 +1,4 @@
-﻿package huawei;
+package huawei;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

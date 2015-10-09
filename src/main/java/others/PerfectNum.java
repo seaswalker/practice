@@ -1,4 +1,4 @@
-﻿package others;
+package others;
 
 /**
  * 寻找完数

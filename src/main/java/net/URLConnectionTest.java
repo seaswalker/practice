@@ -1,4 +1,4 @@
-﻿package net;
+package net;
 
 import java.io.DataOutputStream;
 import java.io.IOException;

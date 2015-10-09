@@ -1,4 +1,4 @@
-﻿package huawei;
+package huawei;
 
 import java.text.DateFormat;
 import java.text.DecimalFormat;

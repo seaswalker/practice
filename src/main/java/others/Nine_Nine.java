@@ -17,5 +17,20 @@ public class Nine_Nine {
 		}
 		System.out.println(result.toString());
 	}
-	
+
+    /**
+     * 使用一个for循环实现
+     */
+    @Test
+    public void one() {
+        for (int i = 1, j = 1;j < 10;i ++) {
+            System.out.print(i + " X " + j + " = " + (i * j) + " ");
+            if (i == j) {
+                ++ j;
+                i = 0;
+                System.out.println();
+            }
+        }
+    }
+
 }

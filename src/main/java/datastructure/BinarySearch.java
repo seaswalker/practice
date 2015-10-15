@@ -20,7 +20,7 @@ public class BinarySearch {
      * @return 目标元素的下标值
      */
     private static int binarySearch(int[] arr, int number, int begin, int end) {
-        if (arr != null) {
+        if (arr != null && begin < end) {
             int middle = (begin + end) >>> 1;
             if (arr[middle] == number) {
                 return middle;

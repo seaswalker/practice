@@ -10,7 +10,7 @@ public class BubbleSort {
 
     public static void main(String[] args) {
         int[] arr = {3, -1, 0, 2, 5, 10, 4};
-        sort(arr);;
+        sort(arr);
         System.out.println(Arrays.toString(arr));
     }
 

@@ -15,7 +15,7 @@ public class QuickSort {
     }
 
     private static void doQuickSort(int[] arr, int low, int high) {
-        if (low < high) {
+        if (arr != null && low < high) {
             int pos = quickSort(arr, low, high);
             doQuickSort(arr, low, pos - 1);
             doQuickSort(arr, pos + 1, high);

@@ -19,18 +19,20 @@ public class InsertSort {
      * @param arr 数组
      */
     private static void sort(int[] arr) {
-        int temp, position;
-        for (int i = 1, l = arr.length;i < l;i ++) {
-            position = i;
-            for (int j = i - 1;j >= 0;j --) {
-                if (arr[j] > arr[position]) {
-                    //交换
-                    temp = arr[j];
-                    arr[j] = arr[position];
-                    arr[position] = temp;
-                    -- position;
-                } else {
-                    break;
+        if (arr != null) {
+            int temp, position;
+            for (int i = 1, l = arr.length;i < l;i ++) {
+                position = i;
+                for (int j = i - 1;j >= 0;j --) {
+                    if (arr[j] > arr[position]) {
+                        //交换
+                        temp = arr[j];
+                        arr[j] = arr[position];
+                        arr[position] = temp;
+                        -- position;
+                    } else {
+                        break;
+                    }
                 }
             }
         }

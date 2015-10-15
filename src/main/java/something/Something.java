@@ -2,7 +2,6 @@ package something;
 
 import org.junit.Test;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 
 /**
@@ -59,30 +58,6 @@ public class Something {
         }
         //11
         System.out.println("最后的人在:" + list.get(0));
-    }
-
-    /**
-     * 插入排序
-     */
-    @Test
-    public void insertSort() {
-        int[] arr = {3, -1, 0, -8, 2, 1};
-        int temp, position;
-        for (int i = 1, l = arr.length;i < l;i ++) {
-            position = i;
-            for (int j = i - 1;j >= 0;j --) {
-                if (arr[j] > arr[position]) {
-                    //交换
-                    temp = arr[j];
-                    arr[j] = arr[position];
-                    arr[position] = temp;
-                    -- position;
-                } else {
-                    break;
-                }
-            }
-        }
-        System.out.println(Arrays.toString(arr));
     }
 
 }

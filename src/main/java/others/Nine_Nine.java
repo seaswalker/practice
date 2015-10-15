@@ -1,5 +1,7 @@
 package others;
 
+import org.junit.Test;
+
 /**
  * 99乘法表
  * @author skywalker

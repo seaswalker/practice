@@ -11,6 +11,7 @@ import java.util.List;
  * [2,1,2,0,1] -> 2
  * Created by skywalker on 2015/10/19.
  */
+@SuppressWarnings("unused")
 public class SellStockII {
 
     public static void main(String[] args) {

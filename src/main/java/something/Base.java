@@ -4,6 +4,7 @@ package something;
  * 一道携程面试题
  * Created by skywalker on 2015/10/20.
  */
+@SuppressWarnings("unused")
 public class Base {
 
     private String baseName = "base";

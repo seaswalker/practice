@@ -11,13 +11,14 @@ package leetcode;
  * 除了2和斐波那契数列不同，其它一样，所以此问题其实就是求解"斐波那契数列"
  * Created by skywalker on 2015/10/21.
  */
+@SuppressWarnings("unused")
 public class ClimbingStairs {
 
     public static void main(String[] args) {
         System.out.println(climbStairsImprove(44));
     }
 
-    private static int climbStairs(int n) {
+	private static int climbStairs(int n) {
         if (n == 0) {
             return 0;
         } else if (n == 1) {

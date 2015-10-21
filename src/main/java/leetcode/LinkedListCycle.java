@@ -7,6 +7,7 @@ import java.util.Set;
  * 判断一个链表是否有环
  * Created by skywalker on 2015/10/20.
  */
+@SuppressWarnings("unused")
 public class LinkedListCycle {
 
     public static void main(String[] args) {

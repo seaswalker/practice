@@ -28,6 +28,7 @@ package leetcode;
  *  (5, 3) -> 4
  * Created by skywalker on 2015/10/19.
  */
+@SuppressWarnings("unused")
 public class LCA {
 
     public static void main(String[] args) {
@@ -164,7 +165,7 @@ public class LCA {
          * 打印二叉树(先序遍历)
          * @param root 根节点
          */
-        private static void printTree(TreeNode root) {
+		private static void printTree(TreeNode root) {
             if (root != null) {
                 System.out.print(root.val + " ");
                 printTree(root.left);

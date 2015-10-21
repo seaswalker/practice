@@ -9,6 +9,7 @@ import java.util.Map;
  * Given nums = [1, 2, 1, 3, 2, 5], return [3, 5]
  * Created by skywalker on 2015/10/19.
  */
+@SuppressWarnings("unused")
 public class SingleNumberIII {
 
     public static void main(String[] args) {

@@ -6,6 +6,7 @@ import java.util.Arrays;
  * 移动0至数组的末尾，同时保持非零数字的顺序，不可以新建一个数组
  * Created by skywalker on 2015/10/18.
  */
+@SuppressWarnings("unused")
 public class MoveZeroes {
 
     public static void main(String[] args) {

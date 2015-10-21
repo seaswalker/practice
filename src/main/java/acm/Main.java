@@ -3,8 +3,6 @@ package acm;
 import beanchmark.BenchMark;
 import beanchmark.TimeBenchMark;
 
-import java.util.Scanner;
-
 /**
  * acm题目
  * Created by skywalker on 2015/10/10.

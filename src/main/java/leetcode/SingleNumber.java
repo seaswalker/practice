@@ -11,6 +11,7 @@ import java.util.Map;
  * 2. 不使用"extra memory"
  * Created by skywalker on 2015/10/20.
  */
+@SuppressWarnings("unused")
 public class SingleNumber {
 
     public static void main(String[] args) {

@@ -4,6 +4,7 @@ package leetcode;
  * 求二叉树的最大深度
  * Created by skywalker on 2015/10/18.
  */
+@SuppressWarnings("unused")
 public class MaxDepthBT {
 
     public static void main(String[] args) {

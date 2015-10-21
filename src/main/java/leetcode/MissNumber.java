@@ -11,6 +11,7 @@ import java.util.Arrays;
  * {1, 0} -> 2
  * Created by skywalker on 2015/10/21.
  */
+@SuppressWarnings("unused")
 public class MissNumber {
 
     public static void main(String[] args) {

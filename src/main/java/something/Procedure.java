@@ -29,6 +29,7 @@ public class Procedure {
             map.put(line[0], line[1]);
         }
         order(map, seed, lines);
+        scanner.close();
     }
 
     /**

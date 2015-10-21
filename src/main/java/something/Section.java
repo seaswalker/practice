@@ -33,6 +33,7 @@ public class Section {
         start = Integer.parseInt(line[0]);
         end = Integer.parseInt(line[1]);
         Node.calTime(nodes, start, end);
+        scanner.close();
     }
 
     /**

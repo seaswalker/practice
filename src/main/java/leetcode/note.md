@@ -87,3 +87,35 @@
         return xor ^ i;
     }
 ```
+
+###ugly number:
+```java
+	/**
+	 * 这个是从别人那里看来的思路
+	 * @see http://segmentfault.com/a/1190000003480992
+	 * 如果是ugly number，那么对此数不停地除以2/3/5那么最后应该得到1
+	 * 仅需2ms
+	 */
+	private static boolean better(int num) {
+		if (num < 1) {
+			return false;
+		}
+		if (num == 1) {
+			return true;
+		}
+		int r2 = num % 2, r3 = num % 3, r5 = num % 5;
+		while (r2 == 0 || r3 == 0 || r5 == 0) {
+			if (r2 == 0) {
+				num /= 2;
+			} else if (r3 == 0) {
+				num /= 3;
+			} else {
+				num /= 5;
+			}
+			r2 = num % 2;
+			r3 = num % 3;
+			r5 = num % 5;
+		}
+		return num == 1;
+	}
+```

@@ -119,3 +119,24 @@
 		return num == 1;
 	}
 ```
+
+###SymmetricTree递归算法:
+```java
+	/**
+	 * 更好的算法 1ms
+	 * @see https://leetcode.com/discuss/63463/java-self-explanatory-1ms-recursive-solution
+	 */
+	private static boolean improve(TreeNode root) {
+		if (root == null)
+			return true;
+		return isSymSubTree(root.left, root.right);
+	}
+	private static boolean isSymSubTree(TreeNode left, TreeNode right) {
+		if (left == null)
+			return (right == null);
+		if (right == null)
+			return false;
+		return (left.val == right.val) && isSymSubTree(left.left, right.right)
+				&& isSymSubTree(left.right, right.left);
+	}
+```

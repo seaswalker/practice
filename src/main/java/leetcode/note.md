@@ -140,3 +140,30 @@
 				&& isSymSubTree(left.right, right.left);
 	}
 ```
+
+###动态规划问题(House Robber):
+```java
+	/**
+	 * 从别人那里看到的
+	 * @see http://www.cnblogs.com/ganganloveu/p/4417485.html
+	 * 这其实是一个动态规划的问题，关于动态规划，这有一个简洁的解释:
+	 * @see http://www.bubuko.com/infodetail-1015504.html
+	 * 0ms
+	 */
+	private static int solution(int[] nums) {
+		if (nums == null || nums.length == 0) {
+			return 0;
+		}
+		if (nums.length == 1) {
+			return nums[0];
+		}
+		int l = nums.length;
+		int[] max = new int[l];
+		max[0] = nums[0];
+		max[1] = Math.max(nums[0], nums[1]);
+		for (int i = 2;i < l;++i) {
+			max[i] = Math.max(max[i - 2] + nums[i], max[i - 1]);
+		}
+		return max[l - 1];
+	}
+```

@@ -167,3 +167,35 @@
 		return max[l - 1];
 	}
 ```
+
+###Bulls and Cows问题:
+```java
+	/**
+	 * 更好的算法(O(n))
+	 * 5ms
+	 * @see https://leetcode.com/discuss/67031/one-pass-java-solution
+	 */
+	private static String better(String secret, String guess) {
+		int bulls = 0, cows = 0;
+		//记录secret中和guess中出现的次数
+		int[] nums = new int[10];
+		int si, gi;
+		for (int i = 0, l = secret.length();i < l; ++i) {
+			si = secret.charAt(i) - '0';
+			gi = guess.charAt(i) - '0';
+			if (si == gi) {
+				++bulls;
+			} else {
+				if (nums[si] < 0) {
+					++cows;
+				}
+				if (nums[gi] > 0) {
+					++cows;
+				}
+				++nums[si];
+				--nums[gi];
+			}
+		}
+		return bulls + "A" + cows + "B";
+	}
+```

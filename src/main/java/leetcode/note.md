@@ -231,3 +231,25 @@
 		return nums[n];
 	}
 ```
+
+###最大子串问题:
+```java
+	/**
+	 * 1ms
+	 * 时间复杂度O(n)，参考:
+	 * @see http://www.tuicool.com/articles/IbiMjaI(动态规划)
+	 * @param nums 最少有一个元素
+	 */
+	private static int maxSubArray(int[] nums) {
+		int sum, max;
+		sum = max = nums[0];
+		for (int i = 1, l = nums.length;i < l; ++i) {
+			if (sum < 0) {
+				sum = 0;
+			}
+			sum += nums[i];
+			max = Math.max(sum, max);
+		}
+		return max;
+	}
+```

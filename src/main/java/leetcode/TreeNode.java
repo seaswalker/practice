@@ -27,13 +27,18 @@ public class TreeNode {
      * 打印二叉树(先序遍历)
      * @param root 根节点
      */
-	public static void printTree(TreeNode root) {
-        if (root != null) {
-            System.out.print(root.val + " ");
-            printTree(root.left);
-            printTree(root.right);
-        }
+	public void print() {
+		printHelper(this);
     }
+	
+	private void printHelper(TreeNode root) {
+		TreeNode node = root;
+		if (node != null) {
+			System.out.print(node.val + " ");
+			printHelper(root.left);
+			printHelper(root.right);
+		}
+	}
 	
 	/**
 	 * 根据给定的节点数组生成一棵树

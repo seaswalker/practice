@@ -47,7 +47,7 @@ public class ConvertSortedArraytoBinarySearchTree {
 	 * @return 返回新的根节点
 	 */
 	private static TreeNode rightBalance(TreeNode root) {
-		TreeNode next = root, pre = null, current = null;
+		TreeNode next = root, pre = null, current = null, node;
 		boolean flag = false;
 		//找到最深的不平衡节点
 		//TODO 是否无需考虑左子树?
@@ -60,7 +60,12 @@ public class ConvertSortedArraytoBinarySearchTree {
 		if (flag) {
 			//左旋
 			///TODO bug
-			next.left = current;
+			//向左到尽头，因为current子树必定比next要小
+			node = next;
+			while (node.left != null) {
+				node = node.left;
+			}
+			node.left = current;
 			current.right = null;
 			if (pre == null) {
 				//是根节点
@@ -68,8 +73,32 @@ public class ConvertSortedArraytoBinarySearchTree {
 			} else {
 				pre.right = next;
 			}
+			//leftBalance(node, next);
 		}
 		return root;
+	}
+	
+	/**
+	 * 检测并修复左子树的不平衡
+	 * @param root 根节点，非空
+	 */
+	@SuppressWarnings("unused")
+	private static void leftBalance(TreeNode root) {
+		TreeNode pre = null, current = null, next = root;
+		boolean flag = false;
+		while (blanceFactor(next) > 1) {
+			pre = current;
+			current = next;
+			next = next.left;
+			flag = true;
+		}
+		if (flag) {
+			if (pre != null) {
+				pre.left = next;
+				next.right = current;
+				current.left = null;
+			}
+		}
 	}
 	
 	/**

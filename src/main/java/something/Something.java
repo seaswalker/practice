@@ -2,7 +2,10 @@ package something;
 
 import org.junit.Test;
 
+import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Map;
+import java.util.Map.Entry;
 
 /**
  * 一些不知道该叫什么的测试
@@ -59,5 +62,24 @@ public class Something {
         //11
         System.out.println("最后的人在:" + list.get(0));
     }
-
+    
+    @Test
+    public void loop() {
+    	int k = 0;
+    	for (int i = 0;i < 10;i ++) {
+    		k += --i;
+    	}
+    	System.out.println(k);
+    }
+    
+    @Test
+    public void hashMap() {
+    	Map<String, String> map = new HashMap<String, String>();
+    	map.put("A", "abc");
+    	map.put("C", "CBD");
+    	for (Entry<String, String> entry : map.entrySet()) {
+    		System.out.println(entry.getKey());
+    	}
+    }
+  
 }

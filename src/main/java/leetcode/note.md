@@ -253,3 +253,29 @@
 		return max;
 	}
 ```
+
+###排好序的数组生成平衡二叉树:
+```java
+	/**
+	 * 1ms / O(n)
+	 * 非原创，思路类似于二分查找，中点为根节点，中点左侧为左子树，右侧为右子树
+	 * @see https://leetcode.com/discuss/10484/my-accepted-java-solution
+	 */
+	public TreeNode sortedArrayToBST(int[] nums) {
+		if (nums == null || nums.length == 0) {
+			return null;
+		}
+		return helper(nums, 0, nums.length - 1);
+	}
+	
+	private TreeNode helper(int[] nums, int low, int high) {
+		if (low > high) {
+			return null;
+		}
+		int mid = low + ((high - low) >> 1);
+		TreeNode node = new TreeNode(nums[mid]);
+		node.left = helper(nums, low, mid - 1);
+		node.right = helper(nums, mid + 1, high);
+		return node;
+	}
+```

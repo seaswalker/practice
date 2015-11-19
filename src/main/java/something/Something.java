@@ -6,6 +6,8 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * 一些不知道该叫什么的测试
@@ -79,6 +81,20 @@ public class Something {
     	map.put("C", "CBD");
     	for (Entry<String, String> entry : map.entrySet()) {
     		System.out.println(entry.getKey());
+    	}
+    }
+    
+    /*
+     * 提取出网络 公司 目标 市值 公司 
+     * @see http://bbs.csdn.net/topics/391861568
+     */
+    @Test
+    public void extract() {
+    	String str = " 一/m 家/q 刚刚/d 成立/vi 两/m 年/qt 的/ude1 网络/n 支付/vn 公司/n ，/wd 它/rr 的/ude1 目标/n 是/vshi 成为/v 市值/n 100亿/m 美元/q 的/ude1 上市/vn 公司/n ";
+    	Pattern pattern = Pattern.compile(" ([\u4e00-\u9fa5]+)/n");
+    	Matcher matcher = pattern.matcher(str);
+    	while (matcher.find()) {
+    		System.out.print(matcher.group(1) + " ");
     	}
     }
   

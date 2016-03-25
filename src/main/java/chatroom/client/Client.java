@@ -49,6 +49,8 @@ public class Client {
 				}
  			}
 		} catch (IOException e) {
+		} finally {
+			scanner.close();
 		}
 	}
 	

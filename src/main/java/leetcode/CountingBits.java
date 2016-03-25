@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * 计算从[0, n]的所有数字的二进制形式中1的个数
- * @author amp
+ * @author skywalker
  *
  */
 public class CountingBits {

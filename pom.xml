@@ -79,5 +79,11 @@
 			<artifactId>cxf-rt-transports-http-jetty</artifactId>
 			<version>3.1.4</version>
 		</dependency>
+		<!-- 阅读commons-lang源码 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.4</version>
+		</dependency>
 	</dependencies>
 </project>

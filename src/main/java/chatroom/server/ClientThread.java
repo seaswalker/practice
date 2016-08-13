@@ -1,4 +1,4 @@
-﻿package chatroom.server;
+package chatroom.server;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

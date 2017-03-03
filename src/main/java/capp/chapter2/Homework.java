@@ -49,18 +49,43 @@ public class Homework {
         int replacement = 0xAB;
         int index = 2;
         //以替换第二个字节为例
-        int mask = 0;
-        for (int i = 3; i>= 0; i--) {
-            if (i != index) {
-                mask |= 0xff;
-                mask <<= (8 * i);
+        int result = 0;
+        for (int i = 0; i < 4; i++) {
+            int offset = (8 * i);
+            if (i == index) {
+                result |= (replacement << offset);
+            } else {
+                int b = (ori >> offset) & 0xff;
+                result |= (b << offset);
             }
         }
-        System.out.println(mask);
-        System.out.println(Integer.toBinaryString(mask));
-        ori &= mask;
-        ori |= (replacement << (8 * index));
-        System.out.println(Integer.toHexString(ori));
+        System.out.println(Integer.toHexString(result));
+    }
+
+    /**
+     * 2.62.
+     * <p>
+     * 右移一个负数，如果得到正数，便是逻辑右移.
+     */
+    @Test
+    public void p62() {
+        boolean isLogic = (Integer.MIN_VALUE >>> 8) > 0;
+        System.out.println(isLogic ? "逻辑右移" : "算数右移");
+    }
+
+    /**
+     * 用逻辑右移实现算数右移.
+     *
+     * @param i 被移动的数字
+     * @param k 右移的位
+     * @return 结果
+     */
+    private int sra(int i, int k) {
+        int t = (i >>> k);
+        if (i < 0) {
+            
+        }
+        return t;
     }
 
 }
